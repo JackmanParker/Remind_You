@@ -1,13 +1,18 @@
-//
-//  Sandbox.hpp
-//  Remind_You
-//
-//  Created by Parker Jackman on 1/24/24.
-//
-
 #ifndef Sandbox_hpp
 #define Sandbox_hpp
 
-#include <stdio.h>
+class Rectangle {
+private:
+    int width;
+    int height;
+
+public:
+    Rectangle(int h, int w);
+    void setWidth(int w);
+    void setHeight(int h);
+    void displayRectangle() const;
+};
+
+int FindArea(int height, int width);
 
 #endif /* Sandbox_hpp */
